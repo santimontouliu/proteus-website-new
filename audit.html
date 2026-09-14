@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Data Reliability Audit | Proteus Analytics</title>
+<meta name="description" content="A fixed-scope, 7–10 business day analytics audit of instrumentation, funnels, KPIs, dashboard logic, and release QA. Know what you can trust.">
+<link rel="canonical" href="https://useproteus.io/audit.html">
+<!-- GitHub Pages staging only — delete this line for the production deploy -->
+<meta name="robots" content="noindex, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Proteus Analytics">
+<meta property="og:title" content="Product Data Reliability Audit | Proteus Analytics">
+<meta property="og:description" content="A fixed-scope, 7–10 business day analytics audit of instrumentation, funnels, KPIs, dashboard logic, and release QA. Know what you can trust.">
+<meta property="og:url" content="https://useproteus.io/audit.html">
+<meta name="theme-color" content="#f4f6f7">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script src="assets/theme.js"></script>
+<link rel="stylesheet" href="assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-79Z1M97CPY"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-79Z1M97CPY');</script>
+
+</head>
+<body data-page="audit">
+<div id="site-root" style="background:var(--bg);color:var(--ink);font-family:var(--sans);transition:background-color .45s ease,color .45s ease">
+
+  <header style="position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);transition:background-color .45s ease,border-color .45s ease">
+    <div style="max-width:1160px;margin-inline:auto;padding-inline:clamp(20px,4vw,40px);min-height:86px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+      <a href="index.html" aria-label="Proteus Analytics home" style="display:flex;gap:10px;align-items:center;font-size:28px;line-height:1;letter-spacing:-.045em;flex-shrink:0;font-family:var(--serif);color:var(--ink)">
+        <svg viewBox="0 0 22 30" fill="none" aria-hidden="true" style="width:22px;height:36px;color:var(--accent)">
+          <path d="M8 27V3a9 5 0 0 1 0 10" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+        </svg>
+        <span>proteus<span style="display:block;font-family:var(--mono);font-size:8px;letter-spacing:.3em;margin-top:7px;padding-left:2px;color:var(--muted)">ANALYTICS</span></span>
+      </a>
+      <nav id="site-nav" aria-label="Main navigation" style="display:flex;align-items:center;gap:28px;font-size:13.5px;margin-left:auto">
+        <a href="#top" aria-current="page" style="color:var(--accent);padding:12px 0;border-bottom:1px solid var(--accent);transition:color .2s,border-color .2s">Reliability Audit</a>
+        <a href="index.html#services" style="color:var(--ink);padding:12px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s" class="s1">Services</a>
+        <a href="index.html#work" style="color:var(--ink);padding:12px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s" class="s1">Portfolio</a>
+        <a href="index.html#about" style="color:var(--ink);padding:12px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s" class="s1">About</a>
+        <a href="#contact" style="display:flex;gap:18px;align-items:center;border:1px solid var(--line);padding:10px 16px;color:var(--ink);transition:border-color .25s,color .25s,background-color .25s" class="s2">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+      <div style="display:flex;align-items:center;gap:10px">
+        <button type="button" data-theme-toggle="1" aria-pressed="false" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:8px 13px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;font:inherit;font-size:12px;white-space:nowrap;transition:border-color .25s,color .25s" class="s3"><span aria-hidden="true" style="font-size:17px;line-height:1">◐</span> <span data-theme-label="1">Dark mode</span></button>
+        <button data-menu-btn="1" type="button" aria-controls="site-nav" aria-expanded="false" style="display:none;align-items:center;gap:14px;background:transparent;border:1px solid var(--line);padding:9px 14px;min-height:44px;font:inherit;font-size:13px;color:var(--ink);cursor:pointer">Menu <span aria-hidden="true" style="font-size:19px">+</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section style="padding-top:clamp(28px,3vw,40px)">
+      <div style="max-width:1160px;margin-inline:auto;padding-inline:clamp(20px,4vw,40px)">
+        <a href="index.html" style="font-size:12px;display:inline-block;margin-bottom:32px;color:var(--muted);transition:color .2s" class="s6">← Proteus Analytics</a>
+        <div data-grid="split" style="display:grid;grid-template-columns:1.18fr 1fr;gap:clamp(32px,5vw,76px);align-items:start">
+          <div data-hero="1">
+            <p style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:10px;margin:0 0 24px">
+              <span aria-hidden="true" style="width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;flex-shrink:0;animation:beat 2.6s ease-in-out infinite"></span> The starting point for reliable decisions</p>
+            <h1 style="font-family:var(--serif);font-weight:400;font-size:clamp(44px,5.5vw,76px);line-height:1.04;letter-spacing:-.022em;margin:0">Know what<br>you can <em style="font-style:italic;color:var(--accent)">trust.</em></h1>
+            <p style="font-size:18px;line-height:1.7;max-width:570px;margin:28px 0 0;color:var(--muted)">The Product Data Reliability Audit traces your critical journeys from product behavior to business KPI — and shows you where the story stops adding up.</p>
+            <a href="https://calendar.app.google/SiHVESoGpMGVcYxG6" style="display:inline-flex;justify-content:center;align-items:center;gap:22px;padding:16px 22px;min-height:52px;background:var(--accent);border:1px solid var(--accent);color:var(--on-accent);font-size:13px;font-weight:600;margin-top:28px;transition:background-color .25s,transform .25s,box-shadow .25s" class="s4">Book a Product Data Reliability Review<span aria-hidden="true" style="font-size:19px;font-weight:400">↗</span></a>
+            <p style="font-family:var(--mono);font-size:11px;letter-spacing:.04em;margin:32px 0 clamp(38px,5vw,60px);color:var(--muted)">7–10 business days · Fixed scope · Actionable findings</p>
+          </div>
+          <aside data-summary="1" data-map="1" style="position:sticky;top:110px;align-self:start;background:var(--surface);border:1px solid var(--line);padding:clamp(24px,3vw,35px);transition:background-color .45s ease,border-color .45s ease">
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:18px">Product Data Reliability Audit</span>
+            <h2 style="font-family:var(--serif);font-weight:400;font-size:34px;line-height:1.12;letter-spacing:-.015em;margin:0">Clarity before<br>another dashboard.</h2>
+            <dl style="margin:30px 0 20px">
+              <div data-stagger="1" style="border-top:1px solid var(--line);display:grid;grid-template-columns:90px 1fr;gap:15px;padding:13px 0;font-size:12px">
+                <dt style="color:var(--muted);font-family:var(--mono);letter-spacing:.04em">Duration</dt>
+                <dd style="margin:0">7–10 business days</dd>
+              </div>
+              <div data-stagger="1" style="border-top:1px solid var(--line);display:grid;grid-template-columns:90px 1fr;gap:15px;padding:13px 0;font-size:12px">
+                <dt style="color:var(--muted);font-family:var(--mono);letter-spacing:.04em">Scope</dt>
+                <dd style="margin:0">Agreed before kickoff</dd>
+              </div>
+              <div data-stagger="1" style="border-top:1px solid var(--line);display:grid;grid-template-columns:90px 1fr;gap:15px;padding:13px 0;font-size:12px">
+                <dt style="color:var(--muted);font-family:var(--mono);letter-spacing:.04em">Focus</dt>
+                <dd style="margin:0">Your highest-stakes product journeys</dd>
+              </div>
+              <div data-stagger="1" style="border-top:1px solid var(--line);display:grid;grid-template-columns:90px 1fr;gap:15px;padding:13px 0;font-size:12px">
+                <dt style="color:var(--muted);font-family:var(--mono);letter-spacing:.04em">Outcome</dt>
+                <dd style="margin:0">A reliability map and a plan to act on</dd>
+              </div>
+            </dl>
+            <p style="font-size:12px;line-height:1.65;color:var(--muted);margin:0">For Product, Growth, Engineering, and Data leaders who need to know which metrics can support their next decision.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding:clamp(62px,7vw,108px) 0;border-top:1px solid var(--line);transition:border-color .45s ease">
+      <div data-reveal="1" data-grid="split" style="max-width:1160px;margin-inline:auto;padding-inline:clamp(20px,4vw,40px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,100px)">
+        <div>
+          <p style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 24px">What we examine</p>
+          <h2 style="font-family:var(--serif);font-weight:400;font-size:clamp(32px,3.7vw,48px);line-height:1.1;letter-spacing:-.015em;margin:0">Follow the signal.<br>Check every handoff.</h2>
+          <p style="font-size:20px;line-height:1.6;color:var(--muted);margin:26px 0 0">A focused product analytics audit across the layers that shape your numbers.</p>
+          <p style="color:var(--muted);margin:20px 0 0">We agree on the critical journeys, platforms, and decisions upfront. The audit goes deep on that scope; it does not assume every event in your organization needs the same attention.</p>
+        </div>
+        <div>
+          <article data-stagger="1" style="display:flex;gap:22px;border-bottom:1px solid var(--line);padding:0 0 22px;transition:border-color .45s ease">
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--accent);padding-top:5px;font-variant-numeric:tabular-nums">01</span>
+            <div>
+              <h3 style="font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.3;margin:0">Events &amp; instrumentation</h3>
+              <p style="font-size:14px;line-height:1.75;color:var(--muted);margin:12px 0 0">Missing, duplicated, or incorrect events; properties, identity, and tracking validation.</p>
+            </div>
+          </article>
+          <article data-stagger="1" style="display:flex;gap:22px;border-bottom:1px solid var(--line);padding:22px 0;transition:border-color .45s ease">
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--accent);padding-top:5px;font-variant-numeric:tabular-nums">02</span>
+            <div>
+              <h3 style="font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.3;margin:0">Funnels &amp; configuration</h3>
+              <p style="font-size:14px;line-height:1.75;color:var(--muted);margin:12px 0 0">Journey continuity, analytics settings, and discrepancies across tools such as Amplitude and GA4.</p>
+            </div>
+          </article>
+          <article data-stagger="1" style="display:flex;gap:22px;border-bottom:1px solid var(--line);padding:22px 0;transition:border-color .45s ease">
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--accent);padding-top:5px;font-variant-numeric:tabular-nums">03</span>
+            <div>
+              <h3 style="font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.3;margin:0">KPIs &amp; dashboards</h3>
+              <p style="font-size:14px;line-height:1.75;color:var(--muted);margin:12px 0 0">Metric definitions, filters, calculation logic, and consistency between reports.</p>
+            </div>
+          </article>
+          <article data-stagger="1" style="display:flex;gap:22px;border-bottom:1px solid var(--line);padding:22px 0;transition:border-color .45s ease">
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--accent);padding-top:5px;font-variant-numeric:tabular-nums">04</span>
+            <div>
+              <h3 style="font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.3;margin:0">Tracking &amp; release QA</h3>
+              <p style="font-size:14px;line-height:1.75;color:var(--muted);margin:12px 0 0">How product changes are tested and whether tracking regressions reach production.</p>
+            </div>
+          </article>
+          <article data-stagger="1" style="display:flex;gap:22px;border-bottom:1px solid var(--line);padding:22px 0;transition:border-color .45s ease">
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--accent);padding-top:5px;font-variant-numeric:tabular-nums">05</span>
+            <div>
+              <h3 style="font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.3;margin:0">Ownership &amp; governance</h3>
+              <p style="font-size:14px;line-height:1.75;color:var(--muted);margin:12px 0 0">Who defines, approves, and maintains the metrics and tracking in scope.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding:clamp(62px,7vw,108px) 0;border-top:1px solid var(--line);background:var(--surface);transition:border-color .45s ease,background-color .45s ease">
+      <div data-reveal="1" style="max-width:1160px;margin-inline:auto;padding-inline:clamp(20px,4vw,40px)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:clamp(24px,5vw,70px);margin-bottom:50px;flex-wrap:wrap">
+          <div>
+            <p style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 24px">A look at the method</p>
+            <h2 style="font-family:var(--serif);font-weight:400;font-size:clamp(32px,3.7vw,48px);line-height:1.1;letter-spacing:-.015em;margin:0">One journey.<br>Several places to lose the truth.</h2>
+          </div>
+          <p style="max-width:355px;font-size:15px;color:var(--muted);margin:0">Select a layer to explore an example finding. This is an illustrative audit, using a fictional activation journey.</p>
+        </div>
+        <div data-grid="explorer" style="display:grid;grid-template-columns:1fr 1.5fr;border:1px solid var(--line);transition:border-color .45s ease">
+          <div role="group" aria-label="Explore an example audit" style="display:flex;flex-direction:column">
+            <button type="button" data-layer="product" aria-pressed="true" style="padding:22px;text-align:left;border:0;border-bottom:1px solid var(--line);background:transparent;display:flex;gap:15px;align-items:center;cursor:pointer;color:var(--ink);font:inherit;font-size:14px;flex:1;transition:background-color .3s,color .3s,box-shadow .3s"><span style="font-family:var(--mono);font-size:11px;color:var(--muted)">01</span>Product behavior<span aria-hidden="true" style="margin-left:auto">↗</span></button>
+            <button type="button" data-layer="tracking" aria-pressed="false" style="padding:22px;text-align:left;border:0;border-bottom:1px solid var(--line);background:transparent;display:flex;gap:15px;align-items:center;cursor:pointer;color:var(--ink);font:inherit;font-size:14px;flex:1;transition:background-color .3s,color .3s,box-shadow .3s"><span style="font-family:var(--mono);font-size:11px;color:var(--muted)">02</span>Instrumentation<span aria-hidden="true" style="margin-left:auto">↗</span></button>
+            <button type="button" data-layer="metric" aria-pressed="false" style="padding:22px;text-align:left;border:0;border-bottom:1px solid var(--line);background:transparent;display:flex;gap:15px;align-items:center;cursor:pointer;color:var(--ink);font:inherit;font-size:14px;flex:1;transition:background-color .3s,color .3s,box-shadow .3s"><span style="font-family:var(--mono);font-size:11px;color:var(--muted)">03</span>KPI definition<span aria-hidden="true" style="margin-left:auto">↗</span></button>
+            <button type="button" data-layer="decision" aria-pressed="false" style="padding:22px;text-align:left;border:0;background:transparent;display:flex;gap:15px;align-items:center;cursor:pointer;color:var(--ink);font:inherit;font-size:14px;flex:1;transition:background-color .3s,color .3s,box-shadow .3s"><span style="font-family:var(--mono);font-size:11px;color:var(--muted)">04</span>Business decision<span aria-hidden="true" style="margin-left:auto">↗</span></button>
+          </div>
+          <div data-panel="1" aria-live="polite" aria-atomic="true" style="padding:clamp(24px,3vw,35px);border-left:1px solid var(--line);background:var(--bg);min-height:345px;transition:background-color .45s ease,border-color .45s ease">
+            <span data-field="label" style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:18px">01 / Product behavior</span>
+            <h3 data-field="title" style="font-family:var(--serif);font-weight:400;font-size:27px;line-height:1.2;letter-spacing:-.01em;margin:0">The action works. The signal is missing.</h3>
+            <p data-field="description" style="font-size:14px;line-height:1.8;color:var(--muted);margin:14px 0 0">A user completes onboarding in the app, but the completion event is absent on one mobile release. The product passes a functional test; the funnel still undercounts activation.</p>
+            <div style="padding-top:20px;margin-top:24px;border-top:1px solid var(--line);transition:border-color .45s ease">
+              <span style="font-family:var(--mono);font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:8px">What we validate</span>
+              <p data-field="action" style="font-size:14px;line-height:1.8;color:var(--muted);margin:0">Trace the completed journey against the emitted events, properties, and release version.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding:clamp(62px,7vw,108px) 0;background:var(--deep);color:var(--on-deep);border-top:1px solid var(--deep)">
+      <div data-reveal="1" style="max-width:1160px;margin-inline:auto;padding-inline:clamp(20px,4vw,40px)">
+        <p style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--deep-accent);margin:0 0 24px">What you take away</p>
+        <h2 style="font-family:var(--serif);font-weight:400;font-size:clamp(32px,3.7vw,48px);line-height:1.1;letter-spacing:-.015em;margin:0">Useful to leadership.<br>Actionable for your team.</h2>
+        <div data-grid="four" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px;margin-top:55px">
+          <article data-stagger="1">
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--deep-accent);display:block;margin-bottom:28px;font-variant-numeric:tabular-nums">01</span>
+            <h3 style="font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.25;margin:0">Reliability Map</h3>
+            <p style="font-size:14px;color:var(--on-deep);font-weight:600;margin:20px 0 0">Know what you can trust.</p>
+            <p style="font-size:13px;line-height:1.7;color:var(--deep-muted);margin:9px 0 0">A clear view of reliable signals, uncertain metrics, and the gaps that put decisions at risk.</p>
+          </article>
+          <article data-stagger="1">
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--deep-accent);display:block;margin-bottom:28px;font-variant-numeric:tabular-nums">02</span>
+            <h3 style="font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.25;margin:0">Prioritized Repair Plan</h3>
+            <p style="font-size:14px;color:var(--on-deep);font-weight:600;margin:20px 0 0">Fix what matters first.</p>
+            <p style="font-size:13px;line-height:1.7;color:var(--deep-muted);margin:9px 0 0">Findings ranked by business impact and implementation effort, with a practical order of work.</p>
+          </article>
+          <article data-stagger="1">
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--deep-accent);display:block;margin-bottom:28px;font-variant-numeric:tabular-nums">03</span>
+            <h3 style="font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.25;margin:0">Executive Brief</h3>
+            <p style="font-size:14px;color:var(--on-deep);font-weight:600;margin:20px 0 0">Give leadership a straight answer.</p>
+            <p style="font-size:13px;line-height:1.7;color:var(--deep-muted);margin:9px 0 0">Which product and business decisions your analytics can safely support — and which need better evidence.</p>
+          </article>
+          <article data-stagger="1">
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--deep-accent);display:block;margin-bottom:28px;font-variant-numeric:tabular-nums">04</span>
+            <h3 style="font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.25;margin:0">Technical Findings</h3>
+            <p style="font-size:14px;color:var(--on-deep);font-weight:600;margin:20px 0 0">Move from diagnosis to action.</p>
+            <p style="font-size:13px;line-height:1.7;color:var(--deep-muted);margin:9px 0 0">Specific recommendations for Product, Engineering, and Data teams, grounded in the issues we find.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding:clamp(62px,7vw,108px) 0;border-top:1px solid var(--line);transition:border-color .45s ease">
+      <div data-reveal="1" style="max-width:1160px;margin-inline:auto;padding-inline:clamp(20px,4vw,40px)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:clamp(24px,5vw,70px);margin-bottom:50px;flex-wrap:wrap">
+          <div>
+            <p style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 24px">How the engagement works</p>
+            <h2 style="font-family:var(--serif);font-weight:400;font-size:clamp(32px,3.7vw,48px);line-height:1.1;letter-spacing:-.015em;margin:0">A clear scope.<br>A direct route to answers.</h2>
+          </div>
+          <p style="max-width:355px;font-size:15px;color:var(--muted);margin:0">The 7–10 business day audit starts once the agreed access and materials are available.</p>
+        </div>
+        <div data-grid="three" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr))">
+          <article data-stagger="1" style="padding:28px 28px 24px 0;border-top:1px solid var(--line);transition:border-color .35s" class="s7">
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--accent);display:block;margin-bottom:25px;font-variant-numeric:tabular-nums">01</span>
+            <h3 style="font-family:var(--serif);font-weight:600;font-size:22px;line-height:1.25;margin:0">Review &amp; scope</h3>
+            <p style="font-size:14px;line-height:1.75;color:var(--muted);margin:12px 0 0">A 30-minute conversation about the decisions, discrepancies, and journeys that matter. We agree the scope and fee before starting.</p>
+          </article>
+          <article data-stagger="1" style="padding:28px 28px 24px;border-top:1px solid var(--line);border-left:1px solid var(--line-soft);transition:border-color .35s" class="s7">
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--accent);display:block;margin-bottom:25px;font-variant-numeric:tabular-nums">02</span>
+            <h3 style="font-family:var(--serif);font-weight:600;font-size:22px;line-height:1.25;margin:0">Trace &amp; validate</h3>
+            <p style="font-size:14px;line-height:1.75;color:var(--muted);margin:12px 0 0">Review the agreed tracking, configurations, reports, and release practices. Reproduce discrepancies and document the evidence.</p>
+          </article>
+          <article data-stagger="1" style="padding:28px 28px 24px;border-top:1px solid var(--line);border-left:1px solid var(--line-soft);transition:border-color .35s" class="s7">
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--accent);display:block;margin-bottom:25px;font-variant-numeric:tabular-nums">03</span>
+            <h3 style="font-family:var(--serif);font-weight:600;font-size:22px;line-height:1.25;margin:0">Readout &amp; next steps</h3>
+            <p style="font-size:14px;line-height:1.75;color:var(--muted);margin:12px 0 0">Walk through the findings with your team. You receive the four deliverables and a prioritized path to repair.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding:clamp(62px,7vw,108px) 0;border-top:1px solid var(--line);transition:border-color .45s ease">
+      <div data-reveal="1" data-grid="split" style="max-width:1160px;margin-inline:auto;padding-inline:clamp(20px,4vw,40px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,100px)">
+        <div>
+          <p style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 24px">Before we begin</p>
+          <h2 style="font-family:var(--serif);font-weight:400;font-size:clamp(32px,3.7vw,48px);line-height:1.1;letter-spacing:-.015em;margin:0">A few practical details.</h2>
+        </div>
+        <div>
+          <details data-stagger="1" style="border-bottom:1px solid var(--line);transition:border-color .45s ease">
+            <summary style="cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:16px;padding:22px 0;transition:color .2s" class="s6">What do you need from our team?<span data-plus="1" aria-hidden="true" style="font-size:23px;color:var(--accent);transition:transform .3s cubic-bezier(.2,.7,.2,1);line-height:1">+</span></summary>
+            <p data-answer="1" style="font-size:14px;line-height:1.8;color:var(--muted);margin:0;padding-bottom:25px">Access to the analytics tools and dashboards in scope, relevant tracking plans and KPI definitions, and a point of contact across Product, Engineering, or Data. We agree the minimum access needed during scoping.</p>
+          </details>
+          <details data-stagger="1" style="border-bottom:1px solid var(--line);transition:border-color .45s ease">
+            <summary style="cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:16px;padding:22px 0;transition:color .2s" class="s6">Will you change our production tracking?<span data-plus="1" aria-hidden="true" style="font-size:23px;color:var(--accent);transition:transform .3s cubic-bezier(.2,.7,.2,1);line-height:1">+</span></summary>
+            <p data-answer="1" style="font-size:14px;line-height:1.8;color:var(--muted);margin:0;padding-bottom:25px">The audit is a diagnostic engagement. Implementation is scoped separately through Reliability Repair, with changes agreed before work begins.</p>
+          </details>
+          <details data-stagger="1" style="border-bottom:1px solid var(--line);transition:border-color .45s ease">
+            <summary style="cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:16px;padding:22px 0;transition:color .2s" class="s6">Do we need to change analytics platforms?<span data-plus="1" aria-hidden="true" style="font-size:23px;color:var(--accent);transition:transform .3s cubic-bezier(.2,.7,.2,1);line-height:1">+</span></summary>
+            <p data-answer="1" style="font-size:14px;line-height:1.8;color:var(--muted);margin:0;padding-bottom:25px">No. We work with your existing setup, including Amplitude, GA4, Mixpanel, PostHog, Looker, and similar tools. The goal is to make the evidence reliable, not to sell you a replacement stack.</p>
+          </details>
+          <details data-stagger="1" style="border-bottom:1px solid var(--line);transition:border-color .45s ease">
+            <summary style="cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:16px;padding:22px 0;transition:color .2s" class="s6">What does the audit cost?<span data-plus="1" aria-hidden="true" style="font-size:23px;color:var(--accent);transition:transform .3s cubic-bezier(.2,.7,.2,1);line-height:1">+</span></summary>
+            <p data-answer="1" style="font-size:14px;line-height:1.8;color:var(--muted);margin:0;padding-bottom:25px">The fee is agreed upfront based on the product journeys, tools, and access requirements in scope. The review conversation helps us define a focused engagement before you commit.</p>
+          </details>
+          <details data-stagger="1" style="border-bottom:1px solid var(--line);transition:border-color .45s ease">
+            <summary style="cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:16px;padding:22px 0;transition:color .2s" class="s6">What happens after the audit?<span data-plus="1" aria-hidden="true" style="font-size:23px;color:var(--accent);transition:transform .3s cubic-bezier(.2,.7,.2,1);line-height:1">+</span></summary>
+            <p data-answer="1" style="font-size:14px;line-height:1.8;color:var(--muted);margin:0;padding-bottom:25px">Your team can use the prioritized repair plan independently, or work with Proteus on Reliability Repair and ongoing analytics QA. There is no requirement to continue into another engagement.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="padding:clamp(62px,7vw,108px) 0;border-top:1px solid var(--line);background:var(--accent-soft);transition:border-color .45s ease,background-color .45s ease">
+      <div data-reveal="1" data-grid="split" style="max-width:1160px;margin-inline:auto;padding-inline:clamp(20px,4vw,40px);display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(36px,6vw,90px)">
+        <div>
+          <p style="font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 24px">A clearer starting point</p>
+          <h2 style="font-family:var(--serif);font-weight:400;font-size:clamp(32px,3.5vw,46px);line-height:1.1;letter-spacing:-.015em;margin:0">Which numbers are you<br>still second-guessing?</h2>
+        </div>
+        <div>
+          <p style="font-size:17px;line-height:1.65;color:var(--muted);margin:0 0 26px">Bring the metric, funnel, or dashboard you’re unsure about. We’ll talk through what’s at stake and whether an audit is the right next step.</p>
+          <a href="https://calendar.app.google/SiHVESoGpMGVcYxG6" style="display:inline-flex;justify-content:center;align-items:center;gap:22px;padding:16px 22px;min-height:52px;background:var(--accent);border:1px solid var(--accent);color:var(--on-accent);font-size:13px;font-weight:600;transition:background-color .25s,transform .25s,box-shadow .25s" class="s4">Book a Product Data Reliability Review<span aria-hidden="true" style="font-size:19px;font-weight:400">↗</span></a>
+          <p style="font-size:12px;color:var(--muted);margin:14px 0 0">30-minute conversation · No preparation required</p>
+          <a href="mailto:hello@useproteus.io" style="display:inline-flex;align-items:center;gap:14px;font-size:13px;font-weight:500;padding:10px 0;margin-top:14px;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:6px;transition:color .2s,text-decoration-color .2s" class="s5">Prefer email? hello@useproteus.io ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="padding:48px 0 25px;background:var(--bg);transition:background-color .45s ease">
+    <div style="max-width:1160px;margin-inline:auto;padding-inline:clamp(20px,4vw,40px)">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap">
+        <a href="index.html" style="display:flex;gap:10px;align-items:center;font-family:var(--serif);font-size:28px;line-height:1;letter-spacing:-.045em;color:var(--ink)">
+          <svg viewBox="0 0 22 30" fill="none" aria-hidden="true" style="width:22px;height:36px;color:var(--accent)">
+            <path d="M8 27V3a9 5 0 0 1 0 10" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+          </svg>
+          <span>proteus<span style="display:block;font-family:var(--mono);font-size:8px;letter-spacing:.3em;margin-top:7px;padding-left:2px;color:var(--muted)">ANALYTICS</span></span>
+        </a>
+        <p style="font-size:12px;color:var(--muted);margin:0">Make the numbers worthy of the decision.</p>
+        <a href="mailto:hello@useproteus.io" style="font-size:12px;transition:color .2s" class="s6">hello@useproteus.io ↗</a>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;margin-top:40px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:10px;letter-spacing:.04em;transition:border-color .45s ease">
+        <span>© 2026 Proteus Analytics LLC · Wyoming, USA</span>
+        <div style="display:flex;gap:25px">
+          <a href="https://linkedin.com/in/santimontouliu" style="padding:8px 0;transition:color .2s" class="s6">LinkedIn ↗</a>
+          <a href="index.html" lang="es" style="padding:8px 0;transition:color .2s" class="s6">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

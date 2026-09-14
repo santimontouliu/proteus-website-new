@@ -1,0 +1,4 @@
+# GitHub Pages staging copy — keep crawlers off the test host.
+# For the production deploy, replace with: User-agent: *\nAllow: /\nSitemap: https://useproteus.io/sitemap.xml
+User-agent: *
+Disallow: /
